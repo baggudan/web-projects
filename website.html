@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey-form</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <h1 id="title">Survey-form</h1>
+        <p id="description">Please fill out this form</p>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label" for="name">Name </label>
+                <input id="name" type="text" required placeholder="Enter your name"></input>
+                
+                <label id="email-label" for="email">Email </label>
+                <input id="email" type="email" required placeholder="Enter your Email"></input>
+                
+                <label id="number-label" for="number">Age </label>
+                <input id="number" type="number" min="10" max="100" required placeholder="Enter your age"></input>
+                
+                <label for="dropdown">How did you hear about us?<select id="dropdown">
+                    <option value="">Select one</option>
+                    <option value="1">YouTube Channel</option>
+                    <option value="2">Forum</option>
+                    <option value="3">Other</option>
+                </select></label>
+
+                <label>Do you like cats? </label>
+                <label for="definitely">
+                    <input id="definitely" type="radio" class="inline" value="definitely" name="recommend">Definitely
+                    </input>
+                </label>
+                <label for="maybe">
+                    <input id="maybe" name="recommend" type="radio" class="inline" value="maybe">Maybe
+                    </input>
+                </label>
+                <label for="of-course">
+                    <input id="of-course" type="radio" class="inline" value="of-course" name="recommend">Of course
+                    </input>
+                </label>
+                
+                <label>Select your hobby</label>
+                    <label for="reading"><input id="reading" type="checkbox" class="inline" value="Reading">Read books</input>
+                </label>
+                <label for="drawing"><input id="drawing" type="checkbox" class="inline" value="drawing">Draw</input>
+                </label>
+                <label for="movies"><input id="movies" type="checkbox" class="inline" value="Watch movies">Watch movies</input>
+                </label>
+                <label for="anime"><input id="anime" type="checkbox" class="inline" value="anime-manga">Watch anime, read manga</input>
+                </label>
+                <label for="music"><input id="music" type="checkbox" class="inline" value="music">Listen to music</input>
+                </label>
+                <label for="sport"><input id="sport" type="checkbox" class="inline" value="music">Sport</input>
+                </label>
+                
+                <label for="comments">Any comments? Leave your wishes here</label>
+                    <textarea id="comments" placeholder="Enter your comment here..."></textarea>
+                <input type="submit" value="Submit" id="submit"></input>
+            </fieldset>
+        </form>
+    </body>
+</html>
